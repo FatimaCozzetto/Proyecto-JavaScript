@@ -122,32 +122,61 @@ body {
   }
 }
 
-/*HISTORIA*/
-.flexContainer {
+/*HISTORIA Y CADA UNO DE LOS SIGNOS*/
+.flexContainerDerecha {
   margin: 30px 10px 40px 15px;
   padding: 15px 20px 40px 15px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   text-align: center;
+  align-content: center;
   justify-content: space-around;
 }
-.flexContainer div {
+.flexContainerDerecha div {
   font-family: "Arvo", serif;
 }
 @media (max-width: 1024px) {
-  .flexContainer {
+  .flexContainerDerecha {
     flex-direction: column;
   }
 }
 @media (max-width: 479px) {
-  .flexContainer img {
+  .flexContainerDerecha img {
     width: 100%;
   }
 }
 
+.flexContainerIzquierda {
+  margin: 30px 10px 40px 15px;
+  padding: 15px 20px 40px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.flexContainerIzquierda div {
+  font-family: "Arvo", serif;
+}
+@media (max-width: 1024px) {
+  .flexContainerIzquierda {
+    flex-direction: column;
+  }
+}
 @media (max-width: 479px) {
-  .imagenRueda {
+  .flexContainerIzquierda img {
+    width: 100%;
+  }
+}
+
+.imagenContainer {
+  align-content: center;
+  margin: 10px;
+}
+@media (max-width: 479px) {
+  .imagenContainer {
     width: 100%;
   }
 }
@@ -216,9 +245,78 @@ body {
   }
 }
 
-/*TITULOS DE CADA SEGMENTO*/
-.segmentos {
+/*TITULOS DE CADA SIGNOS*/
+.TituloSignosIzquierda {
+  color: #FFF7B2;
+  font-family: "EB Garamond", serif;
+  font-size: 4em;
+  text-align: right;
+  line-height: 35px;
+}
+@media (max-width: 767px) {
+  .TituloSignosIzquierda {
+    font-size: 3em;
+  }
+}
+@media (max-width: 479px) {
+  .TituloSignosIzquierda {
+    font-size: 2em;
+  }
+}
+
+.TituloSignosDerecha {
+  color: #FFF7B2;
+  font-family: "EB Garamond", serif;
+  font-size: 4em;
   text-align: left;
+  line-height: 35px;
+}
+@media (max-width: 767px) {
+  .TituloSignosDerecha {
+    font-size: 3em;
+  }
+}
+@media (max-width: 479px) {
+  .TituloSignosDerecha {
+    font-size: 2em;
+  }
+}
+
+/*SUBTITULO DE CADA SIGNO*/
+.SubtitulosSignosDerecha {
+  color: #FFF7B2;
+  font-family: "EB Garamond", serif;
+  font-size: 2em;
+  text-align: right;
+  line-height: 1px;
+}
+@media (max-width: 767px) {
+  .SubtitulosSignosDerecha {
+    font-size: 3em;
+  }
+}
+@media (max-width: 479px) {
+  .SubtitulosSignosDerecha {
+    font-size: 2em;
+  }
+}
+
+.SubtitulosSignosIzquierda {
+  color: #FFF7B2;
+  font-family: "EB Garamond", serif;
+  font-size: 2em;
+  text-align: left;
+  line-height: 1px;
+}
+@media (max-width: 767px) {
+  .SubtitulosSignosIzquierda {
+    font-size: 3em;
+  }
+}
+@media (max-width: 479px) {
+  .SubtitulosSignosIzquierda {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

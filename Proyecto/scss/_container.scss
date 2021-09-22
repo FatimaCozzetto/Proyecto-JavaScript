@@ -1,12 +1,13 @@
-/*HISTORIA*/
+/*HISTORIA Y CADA UNO DE LOS SIGNOS*/
 
-.flexContainer  {
+.flexContainerDerecha  {
     margin: 30px 10px 40px 15px;
     padding: 15px 20px 40px 15px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     text-align: center;
+    align-content: center;
     justify-content: space-around;
         div {
             font-family: 'Arvo', serif;
@@ -23,7 +24,33 @@
     }
 }
 
-.imagenRueda {
+.flexContainerIzquierda  {
+    margin: 30px 10px 40px 15px;
+    padding: 15px 20px 40px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+        div {
+            font-family: 'Arvo', serif;
+        }
+    
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    img {
+        @media (max-width: 479px) {
+            width: 100%;
+        }
+    }
+}
+
+.imagenContainer {
+    align-content: center;
+    margin: 10px;
     @media (max-width: 479px) {
         width: 100%;
     }

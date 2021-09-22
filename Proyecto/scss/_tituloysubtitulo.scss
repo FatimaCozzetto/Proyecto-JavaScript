@@ -31,7 +31,70 @@ $fontsize: 2em;
     }
 }
 
-/*TITULOS DE CADA SEGMENTO*/
-.segmentos{
-    text-align: left;
+/*TITULOS DE CADA SIGNOS*/
+.TituloSignosIzquierda{
+    color: #FFF7B2;
+	font-family: 'EB Garamond', serif;
+	font-size: $fontsize + 2em;
+	text-align: right;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+        font-size: $fontsize + 1em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: $fontsize;
+    }
+}
+
+.TituloSignosDerecha{
+    color: #FFF7B2;
+	font-family: 'EB Garamond', serif;
+	font-size: $fontsize + 2em;
+	text-align: left;
+    line-height: 35px;
+
+    @media (max-width: 767px) {
+        font-size: $fontsize + 1em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: $fontsize;
+    }
+}
+
+
+/*SUBTITULO DE CADA SIGNO*/
+
+.SubtitulosSignosDerecha {
+    color: #FFF7B2;
+	font-family: 'EB Garamond', serif;
+	font-size: $fontsize;
+	text-align: right;
+    line-height: 1px;
+
+    @media (max-width: 767px) {
+        font-size: $fontsize + 1em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: $fontsize;
+    }
+}
+
+.SubtitulosSignosIzquierda {
+    color: #FFF7B2;
+	font-family: 'EB Garamond', serif;
+	font-size: $fontsize;
+	text-align: left;
+    line-height: 1px;
+
+    @media (max-width: 767px) {
+        font-size: $fontsize + 1em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: $fontsize;
+    }
 }
