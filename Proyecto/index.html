@@ -5,26 +5,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=EB+Garamond:ital@0;1&family=Junge&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--ANIMATE-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>
-            Signos Zodiacales
-        </h1>
+        <!--MENÚ-->
+        <nav class="mySidenav">
+            <button class="MenuButton"> 
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#historia">Un poco de historia</a>
+                        </li>
+                        <li>
+                            <a href="">Características de cada signo</a>
+                                <ul>
+                                    <li>
+                                        <a href="">Aries</a>
+                                    </li>
+                                     <li>
+                                        <a href="">Tauro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Géminis</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Cáncer</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Leo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Virgo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Libra</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Escorpio</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sagitario</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Capricornio</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Acuario</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Piscis</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </a>
+            </button>
+        </nav>
+        <span style="font-size:45px;cursor:pointer; color: #FFF7B2;" onclick="openNav()">&#9776;</span>
+        <!--FIN DEL MENÚ-->
     </header>
     <main>
-
+        <!--AQUÍ INICI MI PÁGINA-->
+        <div id="particles-js"></div>
+        <h1 class="portada titulo">
+            Signos Zodiacales
+        </h1>
+        <h2 class="titulo subtitulo">
+            Descubre cuál es tu signo del zodiaco
+        </h2>
+        <div class="flexContainer">
+            <!--IMAGEN DE LA RUEDA-->
+            <div class="imagenRueda">
+                <img src="imagenes/ruedasignos.jpg" alt="Rueda de los signos zodiacales en colores azul y dorado.">
+            </div>
+            <!--HISTORIA-->
+            <div id="historia">
+                <h3 class="titulo subtitulo segmentos">
+                    Un poco de Historia
+                </h3>
+                <p class="parrafo">
+                    No se sabe precisamente quienes iniciaron los estudios de los astros pero se estima  que desde Egipto fue de donde se propagó a todo el mundo lo que conocemos como la astrología actual.
+                </p>
+                <p class="parrafo">
+                    Personas que muestran interés por este tema, señalan que los signos del zodiaco comenzó con los egipcios, que lo llevaron a los babilonios y estos a los griegos. Sin embargo, otras investigaciones difieren de esta teoría e indican que los signos del zodiaco tuvieron su origen en Babilonia, hacia el siglo V A.C. De allí, y gracias a Alejandro Magno, gran seguidor de este tipo de creencias y reconocido místico, se propagó por toda Asia.
+                </p>
+                <p class="parrafo">
+                    De babilonios, pasó a los asirios, y de ellos a los egipcios. Fue desde Egipto desde donde se terminó por propagar a todo el mundo, y donde se comenzaron a sentar las bases de la astrología actual.
+                </p>
+                <p class="parrafo">
+                    La palabra "zodiaco", proviene del griego y del egipcio (Horo -del egipcio- y skopo -del griego) que traducido significa “mirar a Horus”, o lo que es lo mismo, según su simbología, “mirar al horizonte”.
+                </p>
+            </div>
+        </div>
     </main>
     <!--FOOTER-->
-    <footer>
-        
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
     </footer>
     <!--JAVA SCRIPT-->
     <script src="app.js"></script>
     <!--SCRIPT PARTICLES-->
     <script type="text/javascript" src="particles.js-master/particles.js"></script>
     <script type="text/javascript" src="particles.js-master/demo/js/app.js"></script>
+    <!--SCRIPT MENU-->
+    <script>
+		function openNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
+		function closeNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
+	</script>
 </body>
 </html>

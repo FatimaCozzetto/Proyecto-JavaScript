@@ -1,0 +1,28 @@
+/*PÁRRAFOS*/
+$margin: 10px;
+
+.parrafo {
+    color: #FFFFFF;
+    font-family: 'Arvo', serif;
+    font-size: 1.1em;
+ 	margin-bottom: $margin;
+	text-align: left;
+    line-height: 28px;
+
+    @media (max-width: 1024px) {
+        font-size: 2em;
+        margin: $margin;
+        line-height: 50px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 1.5em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 1.2em;
+        line-height : 28px;
+        margin: 1px;
+        text-align: center; 
+    }
+}

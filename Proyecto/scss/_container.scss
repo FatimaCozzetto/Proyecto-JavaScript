@@ -1,0 +1,30 @@
+/*HISTORIA*/
+
+.flexContainer  {
+    margin: 30px 10px 40px 15px;
+    padding: 15px 20px 40px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+        div {
+            font-family: 'Arvo', serif;
+        }
+    
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    img {
+        @media (max-width: 479px) {
+            width: 100%;
+        }
+    }
+}
+
+.imagenRueda {
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+}

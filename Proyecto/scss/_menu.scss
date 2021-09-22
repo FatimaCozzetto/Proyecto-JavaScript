@@ -1,0 +1,62 @@
+/*MENÚ*/
+
+.MenuButton	{
+	background-color: transparent;
+	list-style: none ;
+	border: none;
+	text-align: left;
+}
+
+.mySidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: #031D2E;
+	background-image: url("../imagenes/menu.jpeg"); 
+	background-repeat: no-repeat; 
+	background-position-x: center;
+	background-position-y: center;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+        a {
+            text-decoration: none;
+	        padding: 8px 8px 8px 32px;
+	        font-size: 2em;
+	        display: block;
+	        transition: 0.3s;
+	        color: #818181;
+	        font-family: 'Arvo', serif;
+	        overflow: hidden;
+                &:hover {
+                    color: #FFF7B2;
+                }
+			
+			@media (max-width: 1024px) {
+				font-size: 3em;
+			}
+
+			@media (max-width: 767px) {
+				font-size: 2em;
+			}
+
+			@media (max-width: 479px) {
+				font-size: 1.5em;
+			}
+        }
+
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+}
+
+.closebtn {
+	color: #FFF7B2;
+	position: absolute;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
