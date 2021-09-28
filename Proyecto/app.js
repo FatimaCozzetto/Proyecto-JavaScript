@@ -1,12 +1,18 @@
-let SumaTotal=0;
+/* DESAFÍO: FUNCIONES RELACIONADAS
+let dia= Number (prompt("Ingrese el día de su nacimiento"));
+let mes= Number (prompt("Ingrese el número del mes de su nacimiento"));
 
-for(let i=0; i<4; i++) {
-    let numero= Number(prompt("Ingrese su numero favorito"));
-    SumaTotal+=numero;
-    alert(`La suma de sus números favoritos es , ${SumaTotal}`);
+function suma(dia, mes){
+    let resultado = dia + mes;
+    return resultado;
 }
 
-/*let dia = prompt("Ingrese el día de su nacimiento");
+console.log(suma(dia, mes));*/
+
+
+
+/* DESAFÍO: SIMULADOR INTERACTIVO*/
+let dia = prompt("Ingrese el día de su nacimiento");
 let mes = prompt("Ingrese el nombre del mes de su nacimiento");
 
 switch(mes){
@@ -117,4 +123,3 @@ switch(mes){
             alert('Su signo es Piscis');
         }
 }
-*/
