@@ -1,4 +1,4 @@
-/* DESAFÍO: FUNCIONES RELACIONADAS
+/*DESAFÍO: FUNCIONES RELACIONADAS*/
 let dia= Number (prompt("Ingrese el día de su nacimiento"));
 let mes= Number (prompt("Ingrese el número del mes de su nacimiento"));
 
@@ -7,11 +7,11 @@ function suma(dia, mes){
     return resultado;
 }
 
-console.log(suma(dia, mes));*/
+console.log(suma(dia, mes));
 
 
 
-/* DESAFÍO: SIMULADOR INTERACTIVO*/
+/* DESAFÍO: SIMULADOR INTERACTIVO
 let dia = prompt("Ingrese el día de su nacimiento");
 let mes = prompt("Ingrese el nombre del mes de su nacimiento");
 
@@ -123,3 +123,4 @@ switch(mes){
             alert('Su signo es Piscis');
         }
 }
+*/
