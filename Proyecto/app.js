@@ -1,13 +1,27 @@
 /*DESAFÍO: FUNCIONES RELACIONADAS*/
-let dia= Number (prompt("Ingrese el día de su nacimiento"));
-let mes= Number (prompt("Ingrese el número del mes de su nacimiento"));
+let num1= Number (prompt("Ingrese un primer número"));
+let num2= Number (prompt("Ingrese un segundo número"));
 
-function suma(dia, mes){
-    let resultado = dia + mes;
+function suma(num1, num2){
+    let resultado = num1 + num2;
     return resultado;
 }
 
-console.log(suma(dia, mes));
+function square(num1, num2) {
+    let resultado = num1 * num2;
+    return resultado;
+}
+
+function resta(num1, num2){
+    let resultado = num1 - num2;
+    return resultado;
+}
+
+console.log(suma(num1, num2));
+
+console.log(square(num1, num2));
+
+console.log(resta(num1, num2));
 
 
 
